@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <title>Index</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //MOBLIE NAVI
+			    $("#mobilenavi,.blackscreen1").hide();
+			    $("#iconbar").click(function(){
+				    $("#mobilenavi,.blackscreen1").slideToggle();
+			    });
+			    $(".blackscreen1").click(function(){
+					$("#mobilenavi,.blackscreen1").sideUp();
+			    });
+
+		
+		    //SEARCH
+			    $("#searchbox,.blackscreen2").hide();
+			    $("#searchicon").click(function(){
+				    $("#searchbox,.blackscreen2").fadeToggle();
+			    });
+			    $("#closeicon").click(function(){
+				    $("#searchbox,.blackscreen2").fadeOut();
+			    });
+			    $(".blackscreen2").click(function(){
+				    $("#searchbox,.blackscreen2").fadeOut();
+			    });
+
+				
+			
+		$("#thumbnailproduct img").click(function(){
+				var linkimg = $(this).attr("src");
+				$("#pic1 img").attr("src",linkimg);
+			})           
+        })
+    </script>
+    </head>
+  <body>
+<!-- BLACK SCREEN -->
+<!--<div class="container-fluid" id="blackscreen"></div>-->
+
+
+<!-----NAVI----->
+<div class="container-fluid" id="navibg">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-2
+						col-lg-2
+						col-md-3
+						col-sm-4
+						col-4" id="logo">
+			</div>
+			<div class="col-xl-6 offset-xl-1
+						col-lg-7 offset-lg-1 d-none d-lg-block" id="navi">
+				<div class="nav justify-content-center">
+					<h1 class="heading"><b>MINESWEEPER ONLINE</b></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+
+<!-----BANNER----->
+<div class="container-fluid" id="banner1">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+		<img src="./images/banner.jpg" class="d-block w-100" alt="...">
+		</div>
+	</div>
+</div>
+
+
+<!-- CONTENT 1 -->
+<div class="container-fluid">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 pagename">
+				<h3>
+					<b>ABOUT US</b> 
+				</h3>
+			</div>
+		</div><!-- pagename -->
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 productbox">
+				<div class="row">
+					<div class="col-12"><img src="./images/TK.jpg" class="img-fluid" alt=""></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>TUAN KIET</b></h5></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>ITITWE20032</b></h5></div>
+					<div class="col-12 star" ><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+				</div>
+			</div><!-- product 1 -->
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 productbox">
+				<div class="row">
+					<div class="col-12"><img src="./images/SP.jpg" class="img-fluid" alt=""></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>SY PHI</b></h5></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>ITITIU19178</b></h5></div>
+					<div class="col-12 star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+				</div>
+			</div><!-- product 2 -->
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 d-none d-md-block productbox">
+				<div class="row">
+					<div class="col-12"><img src="./images/TA.jpg" class="img-fluid" alt=""></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>TUAN ANH</b></h5></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>ITITIU19074</b></h5></div>
+					<div class="col-12 star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+				</div>
+			</div><!-- product 3 -->
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 d-none d-lg-block productbox">
+				<div class="row">
+					<div class="col-12"><img src="./images/DT.png" class="img-fluid" alt=""></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>DUC TRI</b></h5></div>
+					<div class="col-12" id="productname"><h5 class="productname"><b>ITITIU19223</b></h5></div>
+					<div class="col-12 star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+				</div>
+			</div><!-- product 4 -->
+		</div>
+	</div>
+ </div>
+
+
+<!-----BANNER 2----->
+<div class="container-fluid" align="center" id="banner2">
+	<img src="./images/banner2.png" class="img-banner2" alt="...">
+</div>
+
+<div class="hidden">	
+</div>
+
+<ul class="startgame">
+	<a href="index.html"><button class="btn_start"><h3>Start Game</h3></button></a>
+</ul>
+
+
+<!-----FOOTER----->
+    <div class="container-fluid" id="footerbg">
+        <div class="container">
+            <div class="row" id="footercontent">
+                <div>
+                    <ul>
+                            <li><a href="https://github.com/TuanKiettt/DSA_project"><h2>Github</h2></a></li>
+
+                    </ul>
+                </div><!---cột 1 --->
+            </div>
+        </div><!---footer container--->
+    </div><!---footer container-fluid--->
+  </body>
+</html>
